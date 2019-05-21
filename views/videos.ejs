@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#027c1a" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Downloadr | Video Formats</title>
+</head>
+
+<body>
+    <div class="container content-wrap">
+        <div class="mb-4" style="margin-top: 50px">
+            <p><a class="btn btn-success btn-lg" href="/" role="button">Return Home</a></p>
+        </div>
+        <% if (error) {%>
+            <p>
+                <h4>
+                    <%= error %>
+                </h4>
+            </p>
+            <% } else { %>
+                <div class="col">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/<%=meta.id%>" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-6">
+                    <h4 class="h5 mb-4 font-weight-bold">Available Formats. Select one to download</h4>
+                    <ul class="list-group">
+                        <% meta.fileFormats.forEach( function (el) { %>
+                            <li class="list-group-item">
+                                <a href="<%= el.url %>" style="font-size: 18px">
+                                    <%= el.format_note %>
+                                        <div class="small">Extension:
+                                            <%= el.ext %> | Video size:
+                                                <%= el.filesize %>
+                                        </div>
+                                </a>
+                            </li>
+                            <% }) %>
+                    </ul>
+                </div>
+                <% } %>
+
+
+    </div>
+</body>
+
+</html>
