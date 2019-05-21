@@ -1,4 +1,5 @@
 # Downloadr
+Download YouTube files in a click by copying and pasting the link in your browser
 
 ## Installation
 
