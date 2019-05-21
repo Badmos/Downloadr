@@ -1,0 +1,21 @@
+{
+    "name": "downloadr",
+    "version": "1.0.0",
+    "description": "Download youtube videos in one click",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "author": "Yusuf Badmos",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "ejs": "^2.6.1",
+        "express": "^4.17.0",
+        "serve-favicon": "^2.5.0",
+        "youtube-dl": "^1.13.1"
+    }
+}
