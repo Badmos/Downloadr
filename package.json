@@ -15,6 +15,7 @@
         "compression": "^1.7.4",
         "ejs": "^2.6.1",
         "express": "^4.17.0",
+        "nodemon": "^1.19.0",
         "serve-favicon": "^2.5.0",
         "youtube-dl": "^1.13.1"
     }
