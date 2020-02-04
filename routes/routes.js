@@ -8,6 +8,7 @@ router.route('/').get((req, res) => {
 		title: 'Downloadr: Download YouTube Videos in a click'
 	});
 });
+
 router
 	.route('/download')
 	.get((req, res) => {
