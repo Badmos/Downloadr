@@ -62,6 +62,7 @@ router
 				}
 			})
 			.catch(err => {
+				console.log(err);
 				res.render('videos', {
 					error:
 						'Axios could not get link. Check your internet connection.'
