@@ -9,6 +9,8 @@ router.route('/').get((req, res) => {
 	});
 });
 
+console.log(`LOG YOUTUBE-DL BINARY FILE =======> ${youtubeDl.getYtdlBinary()}`);
+
 router
 	.route('/download')
 	.get((req, res) => {
