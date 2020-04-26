@@ -87,6 +87,7 @@ function byteToDiskSpace(sizeInBytes) {
 		let order = Number(Math.floor(Math.log(sizeInBytes) / Math.log(1024)));
 		let digitalStorage = digitalStorageRange[order];
 		let sizeOnDisk = (sizeInBytes / Math.pow(1024, order)).toFixed(1);
+		// return file size
 		return `${sizeOnDisk} ${digitalStorage}`;
 	}
 }
